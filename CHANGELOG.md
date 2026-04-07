@@ -14,6 +14,16 @@
 
 ### Improvements
 
+- docs: |发送邮件 API| 明确 `/api/send_mail` 与 `/external/api/send_mail` 两个端点的认证方式差异，补充"地址 JWT"概念说明（#922）
+- docs: |Worker 变量| `JWT_SECRET` 补充生成方式说明（`openssl rand -hex 32`）（#932）
+- docs: |CLI 部署| `routes` 自定义域名配置增加用途说明（#932）
+- docs: |Admin API| `/admin/new_address` 返回值文档补充 `address_id` 字段（#912）
+- docs: |Admin| 补充管理后台账号列表排序功能说明（#918）
+- docs: |Pages 部署| 补充 SPA 模式说明，避免刷新页面或直接访问子路径时 404（#813）
+- docs: |侧边栏| 重组文档侧边栏结构，拆分为"核心配置"、"通知与集成"、"高级功能"、"管理后台"等分组
+- docs: |FAQ| 大幅扩充常见问题，新增 SPA 404、发信余额、SMTP_CONFIG 配置、邮件客户端登录等高频问题（#919, #925, #839, #715, #921, #609）
+- docs: |发送邮件| 增强 SMTP_CONFIG 字段说明和多域名示例，新增发信余额机制说明
+
 ## v1.5.0(main)
 
 ### Features
